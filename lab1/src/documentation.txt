@@ -1,0 +1,22 @@
+This program simulates a simple banking system where multiple threads concurrently perform random money
+transfers between accounts.
+Each account maintains its own balance and is protected by a dedicated mutex
+(using Java’s ReentrantLock), ensuring that concurrent transfers do not cause data races or inconsistencies.
+
+The program verifies correctness by checking that the total sum of all account balances
+remains constant throughout execution.
+
+Each Account object contains its own ReentrantLock.
+When a transfer occurs between two accounts, the thread must acquire both locks before modifying their balances.
+To prevent deadlocks, the tryLock() method is used with a timeout and retry mechanism.
+
+| Mutex                              | Protected invariant                                                    | Explanation                                            |
+| ---------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------ |
+| `Account.lock`                     | The account’s balance is only modified by one thread at a time.        | Protects `balance` field from concurrent access.       |
+| Combination of two `Account.lock`s | The total of both involved accounts remains correct during a transfer. | Ensures atomic transfer of funds between two accounts. |
+
+Invariants:
+Total money across all accounts never changes.
+An account’s balance is always internally consistent — it can never be modified by two threads simultaneously.
+Each transfer is atomic: either the full withdrawal and deposit both happen, or neither does.
+At the end of the program, all threads have finished and released their locks.
