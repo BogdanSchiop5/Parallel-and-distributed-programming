@@ -106,7 +106,7 @@ public class Main {
         final int R_BIG = 1000;
         final int N_BIG = 1000;
         final int P_BIG = 1000;
-        final int[] THREAD_COUNTS = {1, 2, 4, 8};
+        final int[] THREAD_COUNTS = {1, 2, 4, 8, 30, 100, 10000};
 
         int[][] A_big = generateRandomMatrix(R_BIG, N_BIG);
         int[][] B_big = generateRandomMatrix(N_BIG, P_BIG);
@@ -114,7 +114,7 @@ public class Main {
 
         System.out.printf("Matrix Size: %dx%dx%d\n", R_BIG, N_BIG, P_BIG);
         System.out.println("-------------------------------------------------------------------------");
-        System.out.printf("| Threads | ROW_CONSECUTIVE (ms) | COL_CONSECUTIVE (ms) | INTERLEAVED (ms) |\n");
+        System.out.println("| Threads | ROW_CONSECUTIVE (ms) | COL_CONSECUTIVE (ms) | INTERLEAVED (ms) |\n");
         System.out.println("-------------------------------------------------------------------------");
 
         StrategyInterface rowStrategy = new RowConsecutiveStrategy();
