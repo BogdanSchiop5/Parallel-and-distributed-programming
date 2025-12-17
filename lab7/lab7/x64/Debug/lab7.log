@@ -1,0 +1,15 @@
+﻿  lab7.cpp
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(21,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(32,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(56,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(57,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(68,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(69,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(87,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(110,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(124,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(125,11): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(172,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(232,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\schio\OneDrive\Desktop\PDP\lab7\lab7\lab7.cpp(233,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  lab7.vcxproj -> C:\Users\schio\OneDrive\Desktop\PDP\lab7\x64\Debug\lab7.exe

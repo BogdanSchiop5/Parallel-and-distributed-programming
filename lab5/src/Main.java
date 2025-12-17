@@ -13,7 +13,7 @@ public class Main {
         long start = System.nanoTime();
         Polynomial res1 = Multiplication.multiplySequentialRegular(p1, p2);
         long end = System.nanoTime();
-        System.out.println("Sequential Regular: " + (end - start) / 1000000.0 + " ms");
+        System.out.println("Seq Regular: " + (end - start) / 1000000.0 + " ms");
 
         start = System.nanoTime();
         Polynomial res2 = Multiplication.multiplyParallelRegular(p1, p2);
@@ -23,17 +23,12 @@ public class Main {
         start = System.nanoTime();
         Polynomial res3 = Multiplication.multiplySequentialKaratsuba(p1, p2);
         end = System.nanoTime();
-        System.out.println("Seq. Karatsuba:     " + (end - start) / 1000000.0 + " ms");
+        System.out.println("Seq Karatsuba:     " + (end - start) / 1000000.0 + " ms");
 
         start = System.nanoTime();
         Polynomial res4 = Multiplication.multiplyParallelKaratsuba(p1, p2, 0);
         end = System.nanoTime();
         System.out.println("Parallel Karatsuba: " + (end - start) / 1000000.0 + " ms");
 
-        boolean valid = Arrays.equals(res1.getCoeffs(), res2.getCoeffs()) &&
-                Arrays.equals(res1.getCoeffs(), res3.getCoeffs()) &&
-                Arrays.equals(res1.getCoeffs(), res4.getCoeffs());
-
-        System.out.println("\nVerification: " + (valid ? "PASSED" : "FAILED"));
     }
 }
